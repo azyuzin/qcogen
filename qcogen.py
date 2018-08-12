@@ -6,7 +6,7 @@ import os
 
 output_directory = "_output"
 
-level = logging.INFO
+level = logging.DEBUG
 format = '%(asctime)s - %(funcName)s - %(levelname)s - %(message)s'
 handlers = [logging.FileHandler('qcogen.log'), logging.StreamHandler()]
 # handlers = [logging.StreamHandler()]
