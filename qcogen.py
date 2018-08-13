@@ -287,6 +287,7 @@ def main():
                             )
                     acl_list.append(acl)
 
+
     # --------------------------------------- 1. print ACLs ---------------------------------------
     # print full dataframe strings, don't cut them
     pd.set_option('display.max_colwidth', -1)
@@ -357,6 +358,7 @@ def main():
                                                qos_class_acl_list, dscp_mapping)
                 qos_class_object_list.append(qos_class_object)
 
+
             # --------------------------------------- 2. print classes ---------------------------------------
             print_qos_classes_banner = True
             qos_classes_banner = "\n!---------------------------- QoS Classes ----------------------------"
@@ -375,6 +377,8 @@ def main():
                     for qos_acl_object_item in qos_class_object_item.QoSACLList:
                         print(" match access-group name " + qos_acl_object_item)
                         out_file.write(" match access-group name " + qos_acl_object_item + "\n")
+
+
             # --------------------------------------- 3. print marking policies ---------------------------------------
 
             print_qos_policies_banner = True
@@ -399,4 +403,5 @@ def main():
 
 
 if __name__ == '__main__':
+    # argparse here 
     main()
