@@ -250,3 +250,253 @@
 2018-08-13 11:52:50,770 - main - DEBUG - =====> qos_class: Signalling , qos_dscp mapping: CS3
 2018-08-13 11:52:50,770 - main - DEBUG - =====> qos_class: Silver , qos_dscp mapping: AF21
 2018-08-13 11:52:50,785 - main - DEBUG - =====> qos_class: Telephony , qos_dscp mapping: EF
+2018-08-13 14:43:38,583 - main - DEBUG - Found Classes to DCP mapping:
+2018-08-13 14:43:38,583 - main - DEBUG - {'qos_class_name': 'Network Control', 'qos_class_dscp': 'CS4'}
+2018-08-13 14:43:38,583 - main - DEBUG - {'qos_class_name': 'Telephony', 'qos_class_dscp': 'EF'}
+2018-08-13 14:43:38,583 - main - DEBUG - {'qos_class_name': 'Multimedia_Conf', 'qos_class_dscp': 'AF41'}
+2018-08-13 14:43:38,583 - main - DEBUG - {'qos_class_name': 'Platinum', 'qos_class_dscp': 'AF31'}
+2018-08-13 14:43:38,583 - main - DEBUG - {'qos_class_name': 'Gold', 'qos_class_dscp': 'AF32'}
+2018-08-13 14:43:38,583 - main - DEBUG - {'qos_class_name': 'Signalling', 'qos_class_dscp': 'CS3'}
+2018-08-13 14:43:38,583 - main - DEBUG - {'qos_class_name': 'Silver', 'qos_class_dscp': 'AF21'}
+2018-08-13 14:43:38,583 - main - DEBUG - {'qos_class_name': 'Prod Batch', 'qos_class_dscp': 'AF22'}
+2018-08-13 14:43:38,583 - main - DEBUG - {'qos_class_name': 'OAM', 'qos_class_dscp': 'CS2'}
+2018-08-13 14:43:38,583 - main - DEBUG - {'qos_class_name': 'High_Throughput', 'qos_class_dscp': 'AF11'}
+2018-08-13 14:43:38,583 - main - DEBUG - {'qos_class_name': 'Low Priority Data', 'qos_class_dscp': 'CS1'}
+2018-08-13 14:43:38,583 - main - DEBUG - {'qos_class_name': 'Standard', 'qos_class_dscp': 0}
+2018-08-13 14:43:38,583 - main - DEBUG - =====> service_list: BMC Alerting,Dealer Turret,Dealer Turret Signalling,Digital Media Content,Domain Logon,Finance and Marketing,MWF Prod,MyCustomer Files,Network Management,Non-Prod,Prod Batch,Remote Desktop,SfB Application Sharing,SfB Video,SfB Voice,Teller,Video,Voice,Voice Signalling,Web Customer Facing Tools
+2018-08-13 14:43:38,583 - main - INFO - =====> qos_classes_list: Gold,High_Throughput,Multimedia_Conf,OAM,Platinum,Prod Batch,Signalling,Silver,Telephony
+2018-08-13 14:43:38,583 - main - DEBUG - =====> area_list: Branch Site,Corp DC,AWS AZ1,M2M,Central Office
+2018-08-13 14:43:38,583 - build_ACL - DEBUG - permit ip 10.20.177.35 0.0.0.1 host 192.168.10.50
+2018-08-13 14:43:38,583 - build_ACL - DEBUG - permit ip 10.69.0.0 0.0.63.255 host 10.169.140.5
+2018-08-13 14:43:38,583 - build_ACL - DEBUG - permit ip 10.69.0.0 0.0.63.255 host 10.169.156.5
+2018-08-13 14:43:38,599 - build_ACL - DEBUG - permit tcp any eq 8900 10.64.0.0 0.0.255.255 eq 50410
+2018-08-13 14:43:38,599 - build_ACL - DEBUG - permit tcp any 10.78.0.0 0.0.255.255 eq 443
+2018-08-13 14:43:38,599 - build_ACL - DEBUG - permit udp 172.26.0.0 0.0.255.255 172.26.0.0 0.0.255.255 range 16384 32767
+2018-08-13 14:43:38,599 - build_ACL - DEBUG - permit udp 172.26.0.0 0.0.255.255 172.26.0.0 0.0.255.255 eq 5030
+2018-08-13 14:43:38,599 - build_ACL - DEBUG - permit udp 172.19.0.0 0.0.255.255 eq 4545 172.20.0.0 0.0.255.255 eq 4545
+2018-08-13 14:43:38,599 - build_ACL - DEBUG - permit tcp host 172.16.0.0 host 10.87.122.179 eq 5030
+2018-08-13 14:43:38,599 - build_ACL - DEBUG - permit tcp any host 10.87.122.180 range 50400 50409
+2018-08-13 14:43:38,599 - build_ACL - DEBUG - permit ip host 10.64.130.122 host 10.87.122.180
+2018-08-13 14:43:38,615 - build_ACL - DEBUG - permit ip any 10.64.0.0 0.7.255.255 dscp af41
+2018-08-13 14:43:38,615 - build_ACL - DEBUG - permit ip any 10.0.0.0 0.255.255.255 dscp af41
+2018-08-13 14:43:38,615 - build_ACL - DEBUG - permit ip 10.20.177.35 0.0.0.1 host 192.168.10.50
+2018-08-13 14:43:38,615 - build_ACL - DEBUG - permit ip 172.17.192.0 0.0.1.255 172.17.0.0 0.0.255.255
+2018-08-13 14:43:38,615 - build_ACL - DEBUG - permit ip 172.17.192.0 0.0.1.255 10.8.0.0 0.1.255.255
+2018-08-13 14:43:38,615 - build_ACL - DEBUG - permit tcp any host 10.64.145.22 eq 21
+2018-08-13 14:43:38,615 - build_ACL - DEBUG - permit udp any any range 50400 50409
+2018-08-13 14:43:38,615 - build_ACL - DEBUG - permit udp 10.8.0.0 0.1.255.255 range 16384 32767 10.8.0.0 0.1.255.255 range 16384 32767
+2018-08-13 14:43:38,615 - build_ACL - DEBUG - permit udp any range 50000 50019 any
+2018-08-13 14:43:38,615 - build_ACL - DEBUG - permit tcp any range 50000 50019 any
+2018-08-13 14:43:38,615 - build_ACL - DEBUG - permit udp any range 50020 50039 any
+2018-08-13 14:43:38,615 - build_ACL - DEBUG - permit tcp any range 50020 50039 any
+2018-08-13 14:43:38,615 - build_ACL - DEBUG - permit udp any range 50040 50059 any
+2018-08-13 14:43:38,615 - build_ACL - DEBUG - permit tcp any range 50040 50059 any
+2018-08-13 14:43:38,615 - build_ACL - DEBUG - permit ip 10.7.133.128 0.0.0.3 host 10.15.130.122
+2018-08-13 14:43:38,615 - build_ACL - DEBUG - permit ip 10.77.128.128 0.0.0.3 host 10.16.138.12
+2018-08-13 14:43:38,615 - build_ACL - DEBUG - permit ip 10.69.0.0 0.0.63.255 host 10.169.140.5
+2018-08-13 14:43:38,615 - build_ACL - DEBUG - permit ip 10.69.0.0 0.0.63.255 host 10.169.156.5
+2018-08-13 14:43:38,615 - build_ACL - DEBUG - permit ip any host 10.1.188.45
+2018-08-13 14:43:38,615 - build_ACL - DEBUG - permit ip any host 10.1.121.7
+2018-08-13 14:43:38,615 - build_ACL - DEBUG - permit ip any host 10.1.1.5
+2018-08-13 14:43:38,615 - build_ACL - DEBUG - permit ip any host 10.1.1.99
+2018-08-13 14:43:38,630 - build_ACL - DEBUG - permit udp 10.8.124.0 0.0.3.255 any range 5060 5061
+2018-08-13 14:43:38,630 - build_ACL - DEBUG - permit udp 10.8.252.0 0.0.3.255 any range 5060 5061
+2018-08-13 14:43:38,630 - build_ACL - DEBUG - permit tcp 10.8.124.0 0.0.3.255 any range 5060 5061
+2018-08-13 14:43:38,630 - build_ACL - DEBUG - permit tcp 10.8.252.0 0.0.3.255 any range 5060 5061
+2018-08-13 14:43:38,630 - build_ACL - DEBUG - permit tcp any any eq 1494
+2018-08-13 14:43:38,630 - build_ACL - DEBUG - permit tcp any any eq 2598
+2018-08-13 14:43:38,630 - build_ACL - DEBUG - permit tcp any host 10.15.130.122 eq 1964
+2018-08-13 14:43:38,630 - build_ACL - DEBUG - permit tcp any host 10.66.38.1 eq 1964
+2018-08-13 14:43:38,630 - build_ACL - DEBUG - permit tcp any host 10.66.38.2 eq 1964
+2018-08-13 14:43:38,630 - build_ACL - DEBUG - permit udp 172.26.0.0 0.0.255.255 range 16384 32767 172.26.0.0 0.0.255.255
+2018-08-13 14:43:38,630 - build_ACL - DEBUG - permit udp 172.26.0.0 0.0.255.255 eq 5030 172.26.0.0 0.0.255.255
+2018-08-13 14:43:38,630 - build_ACL - DEBUG - permit ip 10.64.0.0 0.7.255.255 any dscp af41
+2018-08-13 14:43:38,630 - build_ACL - DEBUG - permit ip 10.0.0.0 0.255.255.255 any dscp af41
+2018-08-13 14:43:38,630 - build_ACL - DEBUG - permit udp any range 50400 50409 any
+2018-08-13 14:43:38,630 - build_ACL - DEBUG - permit udp 10.8.0.0 0.1.255.255 range 16384 32767 10.8.0.0 0.1.255.255 range 16384 32767
+2018-08-13 14:43:38,630 - build_ACL - DEBUG - permit udp any any range 50000 50019
+2018-08-13 14:43:38,630 - build_ACL - DEBUG - permit tcp any any range 50000 50019
+2018-08-13 14:43:38,630 - build_ACL - DEBUG - permit udp any any range 50020 50039
+2018-08-13 14:43:38,646 - build_ACL - DEBUG - permit tcp any any range 50020 50039
+2018-08-13 14:43:38,646 - build_ACL - DEBUG - permit udp any any range 50040 50059
+2018-08-13 14:43:38,646 - build_ACL - DEBUG - permit tcp any any range 50040 50059
+2018-08-13 14:43:38,646 - build_ACL - DEBUG - permit tcp any eq 8900 10.64.0.0 0.0.255.255 eq 50410
+2018-08-13 14:43:38,646 - build_ACL - DEBUG - permit tcp any 10.78.0.0 0.0.255.255 eq 443
+2018-08-13 14:43:38,646 - build_ACL - DEBUG - permit udp 172.26.0.0 0.0.255.255 172.26.0.0 0.0.255.255 range 16384 32767
+2018-08-13 14:43:38,646 - build_ACL - DEBUG - permit udp 172.26.0.0 0.0.255.255 172.26.0.0 0.0.255.255 eq 5030
+2018-08-13 14:43:38,646 - build_ACL - DEBUG - permit udp 172.19.0.0 0.0.255.255 eq 4545 172.20.0.0 0.0.255.255 eq 4545
+2018-08-13 14:43:38,646 - build_ACL - DEBUG - permit tcp host 172.16.0.0 host 10.87.122.179 eq 5030
+2018-08-13 14:43:38,646 - build_ACL - DEBUG - permit tcp any host 10.87.122.180 range 50400 50409
+2018-08-13 14:43:38,646 - build_ACL - DEBUG - permit ip host 10.64.130.122 host 10.87.122.180
+2018-08-13 14:43:38,646 - build_ACL - DEBUG - permit ip any 10.64.0.0 0.7.255.255 dscp af41
+2018-08-13 14:43:38,646 - build_ACL - DEBUG - permit ip any 10.0.0.0 0.255.255.255 dscp af41
+2018-08-13 14:43:38,646 - build_ACL - DEBUG - permit ip 10.20.177.35 0.0.0.1 host 192.168.10.50
+2018-08-13 14:43:38,646 - build_ACL - DEBUG - permit ip 172.17.192.0 0.0.1.255 172.17.0.0 0.0.255.255
+2018-08-13 14:43:38,646 - build_ACL - DEBUG - permit ip 172.17.192.0 0.0.1.255 10.8.0.0 0.1.255.255
+2018-08-13 14:43:38,646 - build_ACL - DEBUG - permit tcp any host 10.64.145.22 eq 21
+2018-08-13 14:43:38,646 - build_ACL - DEBUG - permit udp any any range 50400 50409
+2018-08-13 14:43:38,661 - build_ACL - DEBUG - permit udp 10.8.0.0 0.1.255.255 range 16384 32767 10.8.0.0 0.1.255.255 range 16384 32767
+2018-08-13 14:43:38,661 - build_ACL - DEBUG - permit udp any range 50000 50019 any
+2018-08-13 14:43:38,661 - build_ACL - DEBUG - permit tcp any range 50000 50019 any
+2018-08-13 14:43:38,661 - build_ACL - DEBUG - permit udp any range 50020 50039 any
+2018-08-13 14:43:38,661 - build_ACL - DEBUG - permit tcp any range 50020 50039 any
+2018-08-13 14:43:38,661 - build_ACL - DEBUG - permit udp any range 50040 50059 any
+2018-08-13 14:43:38,661 - build_ACL - DEBUG - permit tcp any range 50040 50059 any
+2018-08-13 14:43:38,661 - build_ACL - DEBUG - permit ip 10.7.133.128 0.0.0.3 host 10.15.130.122
+2018-08-13 14:43:38,661 - build_ACL - DEBUG - permit ip 10.77.128.128 0.0.0.3 host 10.16.138.12
+2018-08-13 14:43:38,661 - build_ACL - DEBUG - permit ip 10.69.0.0 0.0.63.255 host 10.169.140.5
+2018-08-13 14:43:38,661 - build_ACL - DEBUG - permit ip 10.69.0.0 0.0.63.255 host 10.169.156.5
+2018-08-13 14:43:38,661 - build_ACL - DEBUG - permit ip any host 10.1.188.45
+2018-08-13 14:43:38,661 - build_ACL - DEBUG - permit ip any host 10.1.121.7
+2018-08-13 14:43:38,661 - build_ACL - DEBUG - permit ip any host 10.1.1.5
+2018-08-13 14:43:38,661 - build_ACL - DEBUG - permit ip any host 10.1.1.99
+2018-08-13 14:43:38,661 - build_ACL - DEBUG - permit udp 10.8.124.0 0.0.3.255 any range 5060 5061
+2018-08-13 14:43:38,661 - build_ACL - DEBUG - permit udp 10.8.252.0 0.0.3.255 any range 5060 5061
+2018-08-13 14:43:38,661 - build_ACL - DEBUG - permit tcp 10.8.124.0 0.0.3.255 any range 5060 5061
+2018-08-13 14:43:38,661 - build_ACL - DEBUG - permit tcp 10.8.252.0 0.0.3.255 any range 5060 5061
+2018-08-13 14:43:38,661 - build_ACL - DEBUG - permit tcp any any eq 1494
+2018-08-13 14:43:38,677 - build_ACL - DEBUG - permit tcp any any eq 2598
+2018-08-13 14:43:38,677 - build_ACL - DEBUG - permit tcp any host 10.15.130.122 eq 1964
+2018-08-13 14:43:38,677 - build_ACL - DEBUG - permit tcp any host 10.66.38.1 eq 1964
+2018-08-13 14:43:38,677 - build_ACL - DEBUG - permit tcp any host 10.66.38.2 eq 1964
+2018-08-13 14:43:38,677 - build_ACL - DEBUG - permit ip 10.64.0.0 0.7.255.255 any dscp af41
+2018-08-13 14:43:38,677 - build_ACL - DEBUG - permit ip 10.0.0.0 0.255.255.255 any dscp af41
+2018-08-13 14:43:38,677 - build_ACL - DEBUG - permit udp any range 50400 50409 any
+2018-08-13 14:43:38,677 - build_ACL - DEBUG - permit udp 10.8.0.0 0.1.255.255 range 16384 32767 10.8.0.0 0.1.255.255 range 16384 32767
+2018-08-13 14:43:38,677 - build_ACL - DEBUG - permit udp any any range 50000 50019
+2018-08-13 14:43:38,677 - build_ACL - DEBUG - permit tcp any any range 50000 50019
+2018-08-13 14:43:38,677 - build_ACL - DEBUG - permit udp any any range 50020 50039
+2018-08-13 14:43:38,677 - build_ACL - DEBUG - permit tcp any any range 50020 50039
+2018-08-13 14:43:38,677 - build_ACL - DEBUG - permit udp any any range 50040 50059
+2018-08-13 14:43:38,677 - build_ACL - DEBUG - permit tcp any any range 50040 50059
+2018-08-13 14:43:38,693 - build_ACL - DEBUG - permit udp 172.26.0.0 0.0.255.255 172.26.0.0 0.0.255.255 range 16384 32767
+2018-08-13 14:43:38,693 - build_ACL - DEBUG - permit udp 172.26.0.0 0.0.255.255 172.26.0.0 0.0.255.255 eq 5030
+2018-08-13 14:43:38,693 - build_ACL - DEBUG - permit udp 172.19.0.0 0.0.255.255 eq 4545 172.20.0.0 0.0.255.255 eq 4545
+2018-08-13 14:43:38,693 - build_ACL - DEBUG - permit tcp host 172.16.0.0 host 10.87.122.179 eq 5030
+2018-08-13 14:43:38,693 - build_ACL - DEBUG - permit tcp any host 10.87.122.180 range 50400 50409
+2018-08-13 14:43:38,693 - build_ACL - DEBUG - permit ip host 10.64.130.122 host 10.87.122.180
+2018-08-13 14:43:38,693 - build_ACL - DEBUG - permit ip 172.17.192.0 0.0.1.255 172.17.0.0 0.0.255.255
+2018-08-13 14:43:38,693 - build_ACL - DEBUG - permit ip 172.17.192.0 0.0.1.255 10.8.0.0 0.1.255.255
+2018-08-13 14:43:38,693 - build_ACL - DEBUG - permit tcp any host 10.64.145.22 eq 21
+2018-08-13 14:43:38,693 - build_ACL - DEBUG - permit udp any any range 50400 50409
+2018-08-13 14:43:38,693 - build_ACL - DEBUG - permit udp 10.8.0.0 0.1.255.255 range 16384 32767 10.8.0.0 0.1.255.255 range 16384 32767
+2018-08-13 14:43:38,693 - build_ACL - DEBUG - permit udp any range 50000 50019 any
+2018-08-13 14:43:38,693 - build_ACL - DEBUG - permit tcp any range 50000 50019 any
+2018-08-13 14:43:38,693 - build_ACL - DEBUG - permit udp any range 50020 50039 any
+2018-08-13 14:43:38,693 - build_ACL - DEBUG - permit tcp any range 50020 50039 any
+2018-08-13 14:43:38,693 - build_ACL - DEBUG - permit udp any range 50040 50059 any
+2018-08-13 14:43:38,693 - build_ACL - DEBUG - permit tcp any range 50040 50059 any
+2018-08-13 14:43:38,693 - build_ACL - DEBUG - permit ip 10.7.133.128 0.0.0.3 host 10.15.130.122
+2018-08-13 14:43:38,693 - build_ACL - DEBUG - permit ip 10.77.128.128 0.0.0.3 host 10.16.138.12
+2018-08-13 14:43:38,708 - build_ACL - DEBUG - permit ip host 10.66.38.65 any
+2018-08-13 14:43:38,708 - build_ACL - DEBUG - permit ip 10.69.160.0 0.0.31.255 any
+2018-08-13 14:43:38,708 - build_ACL - DEBUG - permit ip 10.69.192.0 0.0.31.255 any
+2018-08-13 14:43:38,708 - build_ACL - DEBUG - permit ip 10.69.0.0 0.0.63.255 host 10.169.140.5
+2018-08-13 14:43:38,708 - build_ACL - DEBUG - permit ip 10.69.0.0 0.0.63.255 host 10.169.156.5
+2018-08-13 14:43:38,708 - build_ACL - DEBUG - permit ip any host 10.1.188.45
+2018-08-13 14:43:38,708 - build_ACL - DEBUG - permit ip any host 10.1.121.7
+2018-08-13 14:43:38,708 - build_ACL - DEBUG - permit ip any host 10.1.1.5
+2018-08-13 14:43:38,708 - build_ACL - DEBUG - permit ip any host 10.1.1.99
+2018-08-13 14:43:38,708 - build_ACL - DEBUG - permit udp 10.8.124.0 0.0.3.255 any range 5060 5061
+2018-08-13 14:43:38,708 - build_ACL - DEBUG - permit udp 10.8.252.0 0.0.3.255 any range 5060 5061
+2018-08-13 14:43:38,708 - build_ACL - DEBUG - permit tcp 10.8.124.0 0.0.3.255 any range 5060 5061
+2018-08-13 14:43:38,708 - build_ACL - DEBUG - permit tcp 10.8.252.0 0.0.3.255 any range 5060 5061
+2018-08-13 14:43:38,708 - build_ACL - DEBUG - permit tcp any any eq 1494
+2018-08-13 14:43:38,708 - build_ACL - DEBUG - permit tcp any any eq 2598
+2018-08-13 14:43:38,708 - build_ACL - DEBUG - permit tcp any host 10.15.130.122 eq 1964
+2018-08-13 14:43:38,708 - build_ACL - DEBUG - permit tcp any host 10.66.38.1 eq 1964
+2018-08-13 14:43:38,708 - build_ACL - DEBUG - permit tcp any host 10.66.38.2 eq 1964
+2018-08-13 14:43:38,708 - build_ACL - DEBUG - permit tcp 10.78.0.0 0.0.255.255 eq 443 any
+2018-08-13 14:43:38,708 - build_ACL - DEBUG - permit udp 172.26.0.0 0.0.255.255 range 16384 32767 172.26.0.0 0.0.255.255
+2018-08-13 14:43:38,724 - build_ACL - DEBUG - permit udp 172.26.0.0 0.0.255.255 eq 5030 172.26.0.0 0.0.255.255
+2018-08-13 14:43:38,724 - build_ACL - DEBUG - permit udp 172.20.0.0 0.0.255.255 eq 4545 172.19.0.0 0.0.255.255 eq 4545
+2018-08-13 14:43:38,724 - build_ACL - DEBUG - permit tcp host 10.87.122.179 eq 5030 host 172.16.0.0
+2018-08-13 14:43:38,724 - build_ACL - DEBUG - permit tcp host 10.87.122.180 range 50400 50409 any
+2018-08-13 14:43:38,724 - build_ACL - DEBUG - permit ip host 10.87.122.180 host 10.64.130.122
+2018-08-13 14:43:38,724 - build_ACL - DEBUG - permit ip host 192.168.10.50 10.20.177.35 0.0.0.1
+2018-08-13 14:43:38,724 - build_ACL - DEBUG - permit ip 172.17.0.0 0.0.255.255 172.17.192.0 0.0.1.255
+2018-08-13 14:43:38,724 - build_ACL - DEBUG - permit ip 10.8.0.0 0.1.255.255 172.17.192.0 0.0.1.255
+2018-08-13 14:43:38,724 - build_ACL - DEBUG - permit tcp host 10.64.145.22 eq 21 any
+2018-08-13 14:43:38,724 - build_ACL - DEBUG - permit udp any range 50400 50409 any
+2018-08-13 14:43:38,724 - build_ACL - DEBUG - permit udp 10.8.0.0 0.1.255.255 range 16384 32767 10.8.0.0 0.1.255.255 range 16384 32767
+2018-08-13 14:43:38,724 - build_ACL - DEBUG - permit udp any any range 50000 50019
+2018-08-13 14:43:38,724 - build_ACL - DEBUG - permit tcp any any range 50000 50019
+2018-08-13 14:43:38,724 - build_ACL - DEBUG - permit udp any any range 50020 50039
+2018-08-13 14:43:38,724 - build_ACL - DEBUG - permit tcp any any range 50020 50039
+2018-08-13 14:43:38,724 - build_ACL - DEBUG - permit udp any any range 50040 50059
+2018-08-13 14:43:38,724 - build_ACL - DEBUG - permit tcp any any range 50040 50059
+2018-08-13 14:43:38,724 - build_ACL - DEBUG - permit ip host 10.15.130.122 10.7.133.128 0.0.0.3
+2018-08-13 14:43:38,724 - build_ACL - DEBUG - permit ip host 10.16.138.12 10.77.128.128 0.0.0.3
+2018-08-13 14:43:38,724 - build_ACL - DEBUG - permit ip any host 10.66.38.65
+2018-08-13 14:43:38,724 - build_ACL - DEBUG - permit ip any 10.69.160.0 0.0.31.255
+2018-08-13 14:43:38,724 - build_ACL - DEBUG - permit ip any 10.69.192.0 0.0.31.255
+2018-08-13 14:43:38,724 - build_ACL - DEBUG - permit ip host 10.169.140.5 10.69.0.0 0.0.63.255
+2018-08-13 14:43:38,724 - build_ACL - DEBUG - permit ip host 10.169.156.5 10.69.0.0 0.0.63.255
+2018-08-13 14:43:38,740 - build_ACL - DEBUG - permit ip host 10.1.188.45 any
+2018-08-13 14:43:38,740 - build_ACL - DEBUG - permit ip host 10.1.121.7 any
+2018-08-13 14:43:38,740 - build_ACL - DEBUG - permit ip host 10.1.1.5 any
+2018-08-13 14:43:38,740 - build_ACL - DEBUG - permit ip host 10.1.1.99 any
+2018-08-13 14:43:38,740 - build_ACL - DEBUG - permit udp any range 5060 5061 10.8.124.0 0.0.3.255
+2018-08-13 14:43:38,740 - build_ACL - DEBUG - permit udp any range 5060 5061 10.8.252.0 0.0.3.255
+2018-08-13 14:43:38,740 - build_ACL - DEBUG - permit tcp any range 5060 5061 10.8.124.0 0.0.3.255
+2018-08-13 14:43:38,740 - build_ACL - DEBUG - permit tcp any range 5060 5061 10.8.252.0 0.0.3.255
+2018-08-13 14:43:38,740 - build_ACL - DEBUG - permit tcp any eq 1494 any
+2018-08-13 14:43:38,740 - build_ACL - DEBUG - permit tcp any eq 2598 any
+2018-08-13 14:43:38,740 - build_ACL - DEBUG - permit tcp host 10.15.130.122 eq 1964 any
+2018-08-13 14:43:38,740 - build_ACL - DEBUG - permit tcp host 10.66.38.1 eq 1964 any
+2018-08-13 14:43:38,740 - build_ACL - DEBUG - permit tcp host 10.66.38.2 eq 1964 any
+2018-08-13 14:43:38,740 - build_ACL - DEBUG - permit ip 10.20.177.35 0.0.0.1 host 192.168.10.50
+2018-08-13 14:43:38,740 - build_ACL - DEBUG - permit ip host 10.66.38.65 any
+2018-08-13 14:43:38,740 - build_ACL - DEBUG - permit ip 10.69.160.0 0.0.31.255 any
+2018-08-13 14:43:38,740 - build_ACL - DEBUG - permit ip 10.69.192.0 0.0.31.255 any
+2018-08-13 14:43:38,755 - build_ACL - DEBUG - permit tcp 10.78.0.0 0.0.255.255 eq 443 any
+2018-08-13 14:43:38,755 - build_ACL - DEBUG - permit ip any host 10.66.38.65
+2018-08-13 14:43:38,755 - build_ACL - DEBUG - permit ip any 10.69.160.0 0.0.31.255
+2018-08-13 14:43:38,755 - build_ACL - DEBUG - permit ip any 10.69.192.0 0.0.31.255
+2018-08-13 14:43:38,755 - build_ACL - DEBUG - permit ip host 10.169.140.5 10.69.0.0 0.0.63.255
+2018-08-13 14:43:38,755 - build_ACL - DEBUG - permit ip host 10.169.156.5 10.69.0.0 0.0.63.255
+2018-08-13 14:43:38,755 - main - DEBUG - =====> qos_class: Gold , qos_dscp mapping: AF32
+2018-08-13 14:43:38,771 - main - DEBUG - =====> qos_class: High_Throughput , qos_dscp mapping: AF11
+2018-08-13 14:43:38,771 - main - DEBUG - =====> qos_class: Multimedia_Conf , qos_dscp mapping: AF41
+2018-08-13 14:43:38,771 - main - DEBUG - =====> qos_class: OAM , qos_dscp mapping: CS2
+2018-08-13 14:43:38,771 - main - DEBUG - =====> qos_class: Platinum , qos_dscp mapping: AF31
+2018-08-13 14:43:38,771 - main - DEBUG - =====> qos_class: Prod Batch , qos_dscp mapping: AF22
+2018-08-13 14:43:38,771 - main - DEBUG - =====> qos_class: Signalling , qos_dscp mapping: CS3
+2018-08-13 14:43:38,786 - main - DEBUG - =====> qos_class: Silver , qos_dscp mapping: AF21
+2018-08-13 14:43:38,786 - main - DEBUG - =====> qos_class: Telephony , qos_dscp mapping: EF
+2018-08-13 14:43:38,818 - main - DEBUG - =====> qos_class: Gold , qos_dscp mapping: AF32
+2018-08-13 14:43:38,818 - main - DEBUG - =====> qos_class: High_Throughput , qos_dscp mapping: AF11
+2018-08-13 14:43:38,818 - main - DEBUG - =====> qos_class: Multimedia_Conf , qos_dscp mapping: AF41
+2018-08-13 14:43:38,818 - main - DEBUG - =====> qos_class: OAM , qos_dscp mapping: CS2
+2018-08-13 14:43:38,818 - main - DEBUG - =====> qos_class: Platinum , qos_dscp mapping: AF31
+2018-08-13 14:43:38,818 - main - DEBUG - =====> qos_class: Prod Batch , qos_dscp mapping: AF22
+2018-08-13 14:43:38,833 - main - DEBUG - =====> qos_class: Signalling , qos_dscp mapping: CS3
+2018-08-13 14:43:38,833 - main - DEBUG - =====> qos_class: Silver , qos_dscp mapping: AF21
+2018-08-13 14:43:38,833 - main - DEBUG - =====> qos_class: Telephony , qos_dscp mapping: EF
+2018-08-13 14:43:38,849 - main - DEBUG - =====> qos_class: Gold , qos_dscp mapping: AF32
+2018-08-13 14:43:38,849 - main - DEBUG - =====> qos_class: High_Throughput , qos_dscp mapping: AF11
+2018-08-13 14:43:38,849 - main - DEBUG - =====> qos_class: Multimedia_Conf , qos_dscp mapping: AF41
+2018-08-13 14:43:38,849 - main - DEBUG - =====> qos_class: OAM , qos_dscp mapping: CS2
+2018-08-13 14:43:38,865 - main - DEBUG - =====> qos_class: Platinum , qos_dscp mapping: AF31
+2018-08-13 14:43:38,865 - main - DEBUG - =====> qos_class: Prod Batch , qos_dscp mapping: AF22
+2018-08-13 14:43:38,865 - main - DEBUG - =====> qos_class: Signalling , qos_dscp mapping: CS3
+2018-08-13 14:43:38,865 - main - DEBUG - =====> qos_class: Silver , qos_dscp mapping: AF21
+2018-08-13 14:43:38,865 - main - DEBUG - =====> qos_class: Telephony , qos_dscp mapping: EF
+2018-08-13 14:43:38,865 - main - DEBUG - =====> qos_class: Gold , qos_dscp mapping: AF32
+2018-08-13 14:43:38,865 - main - DEBUG - =====> qos_class: High_Throughput , qos_dscp mapping: AF11
+2018-08-13 14:43:38,865 - main - DEBUG - =====> qos_class: Multimedia_Conf , qos_dscp mapping: AF41
+2018-08-13 14:43:38,865 - main - DEBUG - =====> qos_class: OAM , qos_dscp mapping: CS2
+2018-08-13 14:43:38,865 - main - DEBUG - =====> qos_class: Platinum , qos_dscp mapping: AF31
+2018-08-13 14:43:38,880 - main - DEBUG - =====> qos_class: Prod Batch , qos_dscp mapping: AF22
+2018-08-13 14:43:38,880 - main - DEBUG - =====> qos_class: Signalling , qos_dscp mapping: CS3
+2018-08-13 14:43:38,896 - main - DEBUG - =====> qos_class: Silver , qos_dscp mapping: AF21
+2018-08-13 14:43:38,896 - main - DEBUG - =====> qos_class: Telephony , qos_dscp mapping: EF
+2018-08-13 14:43:38,911 - main - DEBUG - =====> qos_class: Gold , qos_dscp mapping: AF32
+2018-08-13 14:43:38,927 - main - DEBUG - =====> qos_class: High_Throughput , qos_dscp mapping: AF11
+2018-08-13 14:43:38,927 - main - DEBUG - =====> qos_class: Multimedia_Conf , qos_dscp mapping: AF41
+2018-08-13 14:43:38,943 - main - DEBUG - =====> qos_class: OAM , qos_dscp mapping: CS2
+2018-08-13 14:43:38,943 - main - DEBUG - =====> qos_class: Platinum , qos_dscp mapping: AF31
+2018-08-13 14:43:38,958 - main - DEBUG - =====> qos_class: Prod Batch , qos_dscp mapping: AF22
+2018-08-13 14:43:38,974 - main - DEBUG - =====> qos_class: Signalling , qos_dscp mapping: CS3
+2018-08-13 14:43:38,974 - main - DEBUG - =====> qos_class: Silver , qos_dscp mapping: AF21
+2018-08-13 14:43:38,974 - main - DEBUG - =====> qos_class: Telephony , qos_dscp mapping: EF
