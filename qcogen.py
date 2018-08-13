@@ -6,9 +6,10 @@ import os
 import argparse
 # from Ubu18
 # from pyhcarm
+# from Ubu18
 output_directory = "_output"
 
-level = logging.DEBUG
+level = logging.INFO
 format = '%(asctime)s - %(funcName)s - %(levelname)s - %(message)s'
 handlers = [logging.FileHandler('qcogen.log'), logging.StreamHandler()]
 # handlers = [logging.StreamHandler()]
