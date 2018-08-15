@@ -39,7 +39,7 @@ ResultSheetName = "Result"
 # Max length of remark statement in ACL
 RemarkLenght = 90
 
-filename = "qos_master_test_v01.xlsx"
+default_file_name = "qos_flows.xlsx"
 qos_flows_sheet_name = "QoS Flows"
 dropdown_fields_sheet_name = "Dropdown Fields"
 
@@ -145,7 +145,9 @@ def build_ACL(Protocol, SourceNetwork, SourceMaskLenth, SourcePort, DSCP, Destin
         # DestinationPort = ""
         DestinationPortCondition = " eq "
 
-    if DSCP != "":
+    if DSCP == "any" or DSCP == "n/a":
+        DSCP = ""
+    else:
         DSCP = " dscp " + DSCP
 
     if Protocol == "any":
@@ -173,6 +175,18 @@ def build_ACL(Protocol, SourceNetwork, SourceMaskLenth, SourcePort, DSCP, Destin
 
 
 def main():
+
+    # construct the argument parse and parse the arguments
+    ap = argparse.ArgumentParser()
+    ap.add_argument("-f", "--file", required=False, help="Excel spreadsheet file name")
+    args = vars(ap.parse_args())
+    print(args)
+    # display a friendly message to the user
+    if args["file"] == None:
+        filename = default_file_name
+    else:
+        filename = args["file"]
+
     #  -------------------------------- Load data from Excel spreadsheet--------------------------
     # --------------------------------------------------------------------------------------------
     # Load data from QoS Flows Sheet into dataframe
