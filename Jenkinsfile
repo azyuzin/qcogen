@@ -5,7 +5,6 @@ pipeline {
       steps {
         echo 'Stage - build'
         isUnix()
-        timestamps()
       }
     }
     stage('Test') {
