@@ -4,6 +4,8 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Stage - build'
+        isUnix()
+        timestamps()
       }
     }
     stage('Test') {
@@ -29,6 +31,7 @@ pipeline {
       }
       steps {
         echo 'Deploy message'
+        pwd()
       }
     }
   }
