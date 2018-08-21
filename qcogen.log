@@ -1,3 +1,4 @@
+TEST !!!
 2018-08-13 11:03:22,625 - main - INFO - =====> qos_classes_list: Gold,High_Throughput,Multimedia_Conf,OAM,Platinum,Prod Batch,Signalling,Silver,Telephony
 2018-08-13 11:46:51,330 - main - INFO - =====> qos_classes_list: Gold,High_Throughput,Multimedia_Conf,OAM,Platinum,Prod Batch,Signalling,Silver,Telephony
 2018-08-13 11:52:50,488 - main - DEBUG - Found Classes to DCP mapping:
